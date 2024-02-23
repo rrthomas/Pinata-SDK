@@ -1,6 +1,6 @@
 {
     "name": "@sc3d/pinata-sdk",
-    "version": "2.1.1-a",
+    "version": "2.1.1-b",
     "description": "SDK for the Pinata IPFS platform (bug-fix fork)",
     "main": "lib/pinata-sdk.js",
     "types": "types/index.d.ts",
@@ -19,7 +19,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/PinataCloud/Pinata-SDK.git"
+        "url": "https://github.com/rrthomas/Pinata-SDK.git"
     },
     "keywords": [
         "webpack",
@@ -33,9 +33,9 @@
     "author": "Matt Ober",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/PinataCloud/Pinata-SDK/issues"
+        "url": "https://github.com/rrthomas/Pinata-SDK/issues"
     },
-    "homepage": "https://github.com/PinataCloud/Pinata-SDK",
+    "homepage": "https://github.com/rrthomas/Pinata-SDK",
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.8.4",
