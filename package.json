@@ -7,8 +7,8 @@
     "scripts": {
         "prepare": "husky install",
         "build": "npm run build-dev && npm run build-prod && npm run test && tsc",
-        "build-dev": "webpack --env dev",
-        "build-prod": "webpack --env build",
+        "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --env dev",
+        "build-prod": "NODE_OPTIONS=--openssl-legacy-provider webpack --env build",
         "coverage": "jest --coverage",
         "dev": "webpack --progress --colors --watch --env dev",
         "html": "open coverage/index.html",
