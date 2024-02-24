@@ -3,7 +3,7 @@
     "version": "2.1.1-c",
     "description": "SDK for the Pinata IPFS platform (bug-fix fork)",
     "main": "lib/pinata-sdk.js",
-    "types": "types/index.d.ts",
+    "types": "types/src/index.d.ts",
     "scripts": {
         "prepare": "husky install",
         "build": "npm run build-dev && npm run build-prod && npm run test && tsc",
