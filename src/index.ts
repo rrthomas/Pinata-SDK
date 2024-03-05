@@ -125,8 +125,6 @@ export class PinataClient {
     }
 }
 
-module.exports = PinataClient;
-
 export * from './commands/data/index.js';
 export * from './commands/pinning/index.js';
 

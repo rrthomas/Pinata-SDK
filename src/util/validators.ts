@@ -1,11 +1,11 @@
 import isIPFS from 'is-ipfs';
 import { PinataConfig } from '../index.js';
 import { ERROR_NO_CREDENTIALS_PROVIDED } from '../constants.js';
-import { version } from '../../package.json' assert {type: 'json'};
+import packageInfo from '../../package.json' assert {type: 'json'};
 
 const commonHeaders = {
     'x-pinata-origin': 'sdk',
-    'x-version': version
+    'x-version': packageInfo.version
 };
 export interface axiosHeaders {
     maxContentLength: number;
