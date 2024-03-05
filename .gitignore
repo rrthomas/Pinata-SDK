@@ -38,3 +38,8 @@ node_modules
 .envrc
 .next/
 issues/
+
+# Compiled TypeScript files
+types/src/**/*.js
+types/src/**/*.js.map
+types/package.json
