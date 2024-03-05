@@ -3,7 +3,7 @@
     "version": "2.1.1-f",
     "description": "SDK for the Pinata IPFS platform (bug-fix fork)",
     "files": [
-        "/types/src"
+        "/types"
     ],
     "main": "types/src/index.js",
     "types": "types/src/index.d.ts",
