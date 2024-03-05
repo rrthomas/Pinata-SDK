@@ -1,11 +1,11 @@
 import NodeFormData from 'form-data';
 
-import { PinataConfig } from '../..';
+import { PinataConfig } from '../../index.js';
 import {
     PinataPinOptions,
     PinataPinResponse,
     uploadToIPFS
-} from './pinFileToIPFS';
+} from './pinFileToIPFS.js';
 import fs from 'fs';
 
 import path from 'path';

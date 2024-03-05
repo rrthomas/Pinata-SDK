@@ -1,13 +1,13 @@
 import axios from 'axios';
-import { baseUrl } from '../../constants';
+import { baseUrl } from '../../constants.js';
 import {
     createConfigForAxiosHeaders,
     validateMetadata
-} from '../../util/validators';
+} from '../../util/validators.js';
 import isIPFS from 'is-ipfs';
-import { handleError } from '../../util/errorResponse';
-import { PinataConfig } from '../..';
-import { PinataMetadata } from '../data/pinList/pinList';
+import { handleError } from '../../util/errorResponse.js';
+import { PinataConfig } from '../../index.js';
+import { PinataMetadata } from '../data/pinList/pinList.js';
 
 export default function hashMetadata(
     config: PinataConfig,

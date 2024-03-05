@@ -1,6 +1,6 @@
 import isIPFS from 'is-ipfs';
-import { PinataConfig } from '..';
-import { ERROR_NO_CREDENTIALS_PROVIDED } from '../constants';
+import { PinataConfig } from '../index.js';
+import { ERROR_NO_CREDENTIALS_PROVIDED } from '../constants.js';
 import { version } from '../../package.json';
 
 const commonHeaders = {

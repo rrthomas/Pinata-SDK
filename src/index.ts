@@ -1,24 +1,23 @@
-import './require-babel-polyfill';
 import pinByHash, {
     PinataPinByHashPinOptions
-} from './commands/pinning/pinByHash';
-import hashMetadata from './commands/pinning/hashMetadata';
+} from './commands/pinning/pinByHash.js';
+import hashMetadata from './commands/pinning/hashMetadata.js';
 import pinFileToIPFS, {
     PinataPinOptions
-} from './commands/pinning/pinFileToIPFS';
-import pinFromFS from './commands/pinning/pinFromFS';
-import pinJSONToIPFS from './commands/pinning/pinJSONToIPFS';
+} from './commands/pinning/pinFileToIPFS.js';
+import pinFromFS from './commands/pinning/pinFromFS.js';
+import pinJSONToIPFS from './commands/pinning/pinJSONToIPFS.js';
 import pinJobs, {
     PinataPinJobsFilterOptions
-} from './commands/pinning/pinJobs/pinJobs';
-import unpin from './commands/pinning/unpin';
-import testAuthentication from './commands/data/testAuthentication';
+} from './commands/pinning/pinJobs/pinJobs.js';
+import unpin from './commands/pinning/unpin.js';
+import testAuthentication from './commands/data/testAuthentication.js';
 import pinList, {
     PinataMetadata,
     PinataPinListFilterOptions
-} from './commands/data/pinList/pinList';
-import getFilesByCount from './commands/data/getFilesByCount/getFilesByCount';
-import userPinnedDataTotal from './commands/data/userPinnedDataTotal';
+} from './commands/data/pinList/pinList.js';
+import getFilesByCount from './commands/data/getFilesByCount/getFilesByCount.js';
+import userPinnedDataTotal from './commands/data/userPinnedDataTotal.js';
 
 export interface PinataConfig {
     pinataApiKey?: string;
@@ -128,7 +127,7 @@ export class PinataClient {
 
 module.exports = PinataClient;
 
-export * from './commands/data';
-export * from './commands/pinning';
+export * from './commands/data/index.js';
+export * from './commands/pinning/index.js';
 
 export default PinataClient;

@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { baseUrl } from '../../constants';
-import { createConfigForAxiosHeaders } from '../../util/validators';
+import { baseUrl } from '../../constants.js';
+import { createConfigForAxiosHeaders } from '../../util/validators.js';
 import isIPFS from 'is-ipfs';
-import { handleError } from '../../util/errorResponse';
-import { PinataConfig } from '../..';
+import { handleError } from '../../util/errorResponse.js';
+import { PinataConfig } from '../../index.js';
 
 export default function unpin(config: PinataConfig, hashToUnpin: string) {
     if (!hashToUnpin) {

@@ -1,14 +1,14 @@
 import axios from 'axios';
-import { baseUrl } from '../../constants';
+import { baseUrl } from '../../constants.js';
 import NodeFormData from 'form-data';
 import stream from 'stream';
 import {
     createConfigForAxiosHeadersWithFormData,
     validateMetadata,
     validatePinataOptions
-} from '../../util/validators';
-import { handleError } from '../../util/errorResponse';
-import { PinataConfig, PinataMetadata } from '../..';
+} from '../../util/validators.js';
+import { handleError } from '../../util/errorResponse.js';
+import { PinataConfig, PinataMetadata } from '../../index.js';
 
 export interface PinataPinPolicyItem {
     id: string;
@@ -83,7 +83,7 @@ export default function pinFileToIPFS(
     readStream: any,
     options?: PinataPinOptions
 ): Promise<PinataPinResponse> {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const data = new NodeFormData();
 
         if (

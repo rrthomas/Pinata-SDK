@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { baseUrl } from '../../constants';
-import { createConfigForAxiosHeaders, validateMetadata, validatePinataOptions } from '../../util/validators';
-import { handleError } from '../../util/errorResponse';
-import { PinataConfig } from '../..';
-import { PinataPinOptions, PinataPinResponse } from './pinFileToIPFS';
+import { baseUrl } from '../../constants.js';
+import { createConfigForAxiosHeaders, validateMetadata, validatePinataOptions } from '../../util/validators.js';
+import { handleError } from '../../util/errorResponse.js';
+import { PinataConfig } from '../../index.js';
+import { PinataPinOptions, PinataPinResponse } from './pinFileToIPFS.js';
 
 export default function pinJSONToIPFS(config: PinataConfig, body: any, options? : PinataPinOptions):Promise<PinataPinResponse> {
 

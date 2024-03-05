@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { baseUrl } from '../../../constants';
-import { createConfigForAxiosHeaders } from '../../../util/validators';
-import queryBuilder from './queryBuilder';
-import { handleError } from '../../../util/errorResponse';
-import { PinataConfig } from '../../..';
+import { baseUrl } from '../../../constants.js';
+import { createConfigForAxiosHeaders } from '../../../util/validators.js';
+import queryBuilder from './queryBuilder.js';
+import { handleError } from '../../../util/errorResponse.js';
+import { PinataConfig } from '../../../index.js';
 
 export interface PinataPinJobsResponseRow {
     id: number | string;

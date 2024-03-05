@@ -1,11 +1,11 @@
 import axios from 'axios';
-import { baseUrl } from '../../constants';
-import { createConfigForAxiosHeaders, validateMetadata } from '../../util/validators';
+import { baseUrl } from '../../constants.js';
+import { createConfigForAxiosHeaders, validateMetadata } from '../../util/validators.js';
 import isIPFS from 'is-ipfs';
-import { handleError } from '../../util/errorResponse';
-import { PinataConfig } from '../..';
-import { PinataOptions } from './pinFileToIPFS';
-import { PinataMetadata } from '../data/pinList/pinList';
+import { handleError } from '../../util/errorResponse.js';
+import { PinataConfig } from '../../index.js';
+import { PinataOptions } from './pinFileToIPFS.js';
+import { PinataMetadata } from '../data/pinList/pinList.js';
 
 export interface PinataPinByHashPinOptions {
     pinataMetadata?: PinataMetadata;

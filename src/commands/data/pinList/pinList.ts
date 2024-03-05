@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { baseUrl } from '../../../constants';
-import { createConfigForAxiosHeaders } from '../../../util/validators';
-import { handleError } from '../../../util/errorResponse';
-import queryBuilder from './queryBuilder';
-import { PinataConfig } from '../../..';
+import { baseUrl } from '../../../constants.js';
+import { createConfigForAxiosHeaders } from '../../../util/validators.js';
+import { handleError } from '../../../util/errorResponse.js';
+import queryBuilder from './queryBuilder.js';
+import { PinataConfig } from '../../../index.js';
 export interface PinataPinRegion {
     regionId: string;
     currentReplicationCount: number;

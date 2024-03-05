@@ -1,6 +1,6 @@
-import { PinataConfig } from '../..';
-import { PinataOptions } from './pinFileToIPFS';
-import { PinataMetadata } from '../data/pinList/pinList';
+import { PinataConfig } from '../../index.js';
+import { PinataOptions } from './pinFileToIPFS.js';
+import { PinataMetadata } from '../data/pinList/pinList.js';
 export interface PinataPinByHashPinOptions {
     pinataMetadata?: PinataMetadata;
     pinataOptions?: PinataOptions;

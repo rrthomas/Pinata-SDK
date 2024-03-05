@@ -1,4 +1,4 @@
-import { PinataConfig } from '../..';
+import { PinataConfig } from '../../index.js';
 export interface PinataTestAuthenticationResponse {
     authenticated: boolean;
 }

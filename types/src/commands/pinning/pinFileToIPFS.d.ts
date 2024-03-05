@@ -1,5 +1,5 @@
 import NodeFormData from 'form-data';
-import { PinataConfig, PinataMetadata } from '../..';
+import { PinataConfig, PinataMetadata } from '../../index.js';
 export interface PinataPinPolicyItem {
     id: string;
     desiredReplicationCount: number;

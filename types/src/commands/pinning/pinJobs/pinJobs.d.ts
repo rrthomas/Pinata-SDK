@@ -1,4 +1,4 @@
-import { PinataConfig } from '../../..';
+import { PinataConfig } from '../../../index.js';
 export interface PinataPinJobsResponseRow {
     id: number | string;
     ipfs_pin_hash: string;

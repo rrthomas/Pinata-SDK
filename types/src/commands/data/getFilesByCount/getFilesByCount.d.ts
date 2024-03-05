@@ -1,5 +1,5 @@
-import { PinataConfig } from '../../..';
-import { PinataPin, PinataPinListFilterOptions } from '../pinList/pinList';
+import { PinataConfig } from '../../../index.js';
+import { PinataPin, PinataPinListFilterOptions } from '../pinList/pinList.js';
 export default function getFilesByCount(config: PinataConfig, filters?: PinataPinListFilterOptions, maxCount?: number): {
     [Symbol.asyncIterator]: () => {
         next(): Promise<{
