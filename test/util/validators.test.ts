@@ -7,7 +7,7 @@ import {
     validatePinataOptions
 } from '../../src/util/validators';
 import { ERROR_NO_CREDENTIALS_PROVIDED } from '../../src/constants';
-import { version } from '../../package.json';
+import { version } from '../../package.json' assert {type: 'json'};
 
 describe('validateApiKeys function testing', () => {
     test('check to throw if either pinataApiKey or pinataSecretApiKey are not provided', () => {

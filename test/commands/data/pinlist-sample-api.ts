@@ -1,5 +1,5 @@
 import { baseUrl } from '../../../src/constants';
-import { version } from '../../../package.json';
+import { version } from '../../../package.json' assert {type: 'json'};
 
 export const fakeHeaders = {
     headers: {
