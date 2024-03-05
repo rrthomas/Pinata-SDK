@@ -1,6 +1,6 @@
 {
     "name": "@sc3d/pinata-sdk",
-    "version": "2.1.1-j",
+    "version": "2.1.1-k",
     "description": "SDK for the Pinata IPFS platform (bug-fix fork)",
     "files": [
         "/types"
